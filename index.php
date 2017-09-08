@@ -9,6 +9,7 @@
 
         $students = array();
 
+        /* Create first student */
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
@@ -19,6 +20,7 @@
         $first->add_grade(55);
         $students['j123'] = $first;
 
+        /* Create second student */
         $second = new Student();
         $second->surname = "Einstein";
         $second->first_name = "Albert";
@@ -29,6 +31,9 @@
         $second->add_grade(80);
         $second->add_grade(50);
         $students['a456'] = $second;
+
+        /* Sort in key sequence */
+        ksort($students);
 
         foreach ($students as $student)
             echo $student->toString();
