@@ -32,6 +32,15 @@
         $second->add_grade(50);
         $students['a456'] = $second;
 
+        /* Create third student */
+        $third = new Student();
+        $third->surname = "Park";
+        $third->first_name = "Daniel";
+        $third->add_email('work', 'dpark50@my.bcit.ca');
+        $third->add_grade(95);
+        $third->add_grade(80);
+        $students['a00847176'] = $third;
+
         /* Sort in key sequence */
         ksort($students);
 
