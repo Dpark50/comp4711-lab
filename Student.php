@@ -1,6 +1,7 @@
 <?php
 /**
- * Created by PhpStorm.
+ * Student record containing name, emails, and grades.
+ *
  * User: Daniel
  * Date: 2017-09-07
  * Time: 4:35 PM
@@ -8,8 +9,7 @@
 
 class Student {
     /* Student constructor */
-    function __construct()
-    {
+    function __construct() {
         $this->surname = '';
         $this->first_name = '';
         $this->emails = array();
